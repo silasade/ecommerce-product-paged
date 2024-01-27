@@ -1,38 +1,475 @@
-.App {
-  text-align: center;
+body{
+  margin: 1% 3% 0% 3% !important;
+  margin-bottom: 0 !important;
+  font-family: 'Kumbh Sans', sans-serif !important;
+  font-weight: 400,700 !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  background-color: white !important;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar, nav{
+  background-color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav a{
+  text-decoration: none;
+  cursor: pointer;
+  color: hsl(220, 14%, 75%);
+}
+.gallery{
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  width: 90%;
+ }
+.details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  align-self: center;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 90%;
+}
+.button1{
+  display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 4px 10px 4px 10px;
+  width: 300%;
+  border: 0;
+}
+p{
+  color: hsl(220, 14%, 75%);
+}
+.pop{
+  display: flex;
+  flex-direction: row;
+  object-fit: contain !important;
+  
+}
+.popove{
+  display: flex;
+  flex-direction: column;
+  gap: 5px !important;
+
+}
+.bin{
+  cursor: pointer;
+}
+.pop h5{
+  font-size: 14px !important;
+}
+.pop-image{
+  width: 75% !important;
+  border-radius: 0.2cm !important;
+}
+.button2{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px 7px 12px 7px;
+  border: 0;
+  width: 300%;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  justify-self: center;
+}
+button{
+  border-radius: 0.4cm !important;
+}
+.button3{
+  background-color: hsl(26, 100%, 55%);
+  border: 0;
+  width: 100%;
+  padding: 3%;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.thumbmail{
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  
+}
+.empty{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empty h4{
+  font-size: 15px;
+}
+.Badge{
+  background-color: hsl(26, 100%, 55%) !important;
+}
+.major{
+  width: 70%;
+  height: 320px;
+  border-radius: 0.5cm;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.det{
+  display: flex;
+  flex-direction: row;
+  
+  margin: 5%;
+  gap:1%
+}
+.minor{
+  width: 15%;
+  border-radius: 0.5cm;
+  overflow: hidden;
+  z-index: 2;
+}
+.minor:hover{
+  cursor: pointer;
+  border: 2px;
+  border-style: solid;
+  border-color: hsl(26, 100%, 55%);
+ color: hsl(0, 0%, 0%);
+ opacity: 75%;
+}
+nav a:hover{
+
+  
+  text-decoration: none;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-bottom: 3%;
+  border-color: hsl(26, 100%, 55%);
+  color: hsl(219, 9%, 45%);
+}
+.avartar{
+  object-fit: cover;
+  width: 50%;
+
+}
+.rice{
+  width: 70%;
+}
+.fifity{
+  color: hsl(26, 100%, 55%);
+  padding: 5%;
+  border-radius: 0.1cm;
+  background-color: hsl(25, 100%, 94%);
+}
+.avartar:hover{
+  cursor: pointer;
+  border: 2px;
+  border-style: solid;
+  border-color: hsl(26, 100%, 55%);
+  border-radius: 50%;
+
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+}
+nav a.active{
+  color: hsl(26, 100%, 55%);;
+}
+.men{
+  cursor: pointer;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.im{
+  display: flex !important;
+  align-items: center !important;
+}
+
+.profile{
+  display: flex;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 4%;
+}
+.img{
+  display: inline-flex;
+  gap: 10%;
+}
+.rice{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.price{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+@media (max-width:1050px){
+  .gallery{
+    width: 190%;
   }
-  to {
-    transform: rotate(360deg);
+  p{
+    font-style: 500;
+    font-size: 16px !important;
+  }
+  .buttons{
+    width: 30%;
+  }
+  .button1, .button2{
+    width: 250%;
+  }
+}
+@media (max-width:900px){
+  
+  p{
+    font-size: 15px !important;
+  }
+}
+@media (max-width:850px){
+  .gallery{
+    width: 290%;
+  }
+  .details{
+    width: 250%;
+  }
+  p{
+    font-size: 14px !important;
+  }
+  .buttons{
+    gap: 100px;
+  }
+}
+@media (max-width:750px){
+  .buttons{
+    gap: 100px;
+  }
+  .button2{
+    width: 220%;
+  }
+}
+@media(max-width:700px){
+  .gallery{
+    width: 100%;
+  }
+  .buttons{
+    width: 100%;
+  }
+  .details{
+    width: 100%;
+  }
+  body{
+    margin: 0% !important;
+  }
+  .det{
+    margin: 0% !important;
+  }
+  nav{
+    flex-direction: column;
+    
+    align-items: flex-start;
+    gap:51px;
+    
+    margin: 2%;
+   background-color: white !important;
+  }
+  .thumbmail{
+    position: relative;
+  }
+  .arrows{
+    position: absolute;
+    display: inline-flex;
+    top: 220px;
+    flex-direction: row;
+    gap: 450px;
+   margin-left: 10%;
+   margin-right: 10%;
+  }
+  .image1{
+    position: relative;
+    
+  }
+  .image1, .image2{
+    background-color: white;
+    padding: 3%;
+    border-radius: 100%;
+  }
+  #arrow{
+    cursor: pointer;
+  }
+  .profile{
+    margin-left: auto;
+
+  }
+  .det{
+    flex-direction: column;
+    
+  }
+  .major{
+    width: 100%;
+    border-radius: 0%;
+   
+  }
+  .details{
+    width: 95%;
+  }
+  .button1, .button2{
+    width: 100%;
+  }
+  .buttons{
+    gap: 12px;
+    flex-direction: column;
+    
+  }
+  .rice{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .price{
+    width: 100%;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+  }
+  .gallery{
+    width: 100% !important;
+    
+  }
+}
+@media(max-width: 650px){
+  .arrows{
+    
+    gap: 420px;
+   
+  }
+  p{
+    font-size: 14px !important;
+  }
+}
+@media(max-width: 610px){
+  .arrows{
+    
+    gap: 400px;
+   
+  }
+}
+@media(max-width: 580px){
+  .arrows{
+    
+    gap: 380px;
+   
+  }
+}
+@media(max-width: 560px){
+  .arrows{
+    
+    gap: 360px;
+   
+  }
+  p{
+    font-size: 12px !important;
+    font-family: "Kumbh Sans";
+  }
+}
+@media(max-width: 540px){
+  .arrows{
+    
+    gap: 340px;
+   
+  }
+}
+@media(max-width: 520px){
+  .arrows{
+    
+    gap: 320px;
+   
+  }
+}
+@media(max-width: 500px){
+  .arrows{
+    
+    gap: 300px;
+   
+  }
+  .profile{
+    width: 30%;
+
+  }
+}
+@media(max-width: 480px){
+  .arrows{
+    
+    gap: 280px;
+   
+  }
+  .log{
+    width: 80%;
+  }
+}
+@media(max-width: 460px){
+  .arrows{
+    
+    gap: 260px;
+   
+  }
+}
+@media(max-width: 440px){
+  .arrows{
+    
+    gap: 240px;
+   
+  }
+  .profile{
+    width: 30%;
+
+  }
+}
+@media(max-width: 420px){
+  .arrows{
+    
+    gap: 220px;
+   
+  }
+}
+@media(max-width: 400px){
+  .arrows{
+    
+    gap: 200px;
+   
+  }
+  .log{
+    width: 60%;
+  }
+  .profile{
+    width: 30%;
+
+  }
+}
+@media(max-width:350px){
+  .log{
+    width: 40%;
+  }
+  .profile{
+    width: 30%;
+
+  }
+}
+@media(max-width:335px){
+  .profile{
+    width: 30%;
+
   }
 }
