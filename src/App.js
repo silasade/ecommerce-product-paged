@@ -22,7 +22,7 @@ function App() {
       <Navbar/>
     
     <Routes>
-        <Route path="/ecommerce-product-page" element={
+        <Route path="/ecommerce-product-paged" element={
             <React.Suspense fallback={<Spinner/>}>
                 <Lazyabout/>
             </React.Suspense>}/>

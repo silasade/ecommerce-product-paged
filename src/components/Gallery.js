@@ -193,7 +193,7 @@ function Gallery(){
             <div>
                 <button className='button1'>
                     <img src={minus} onClick={handlesClick} alt=""/>
-                    <p className='value d-flex align-items-center'>{numbers}</p>
+                    <p style={{color: "hsl(26, 100%, 55%)"}} className='value d-flex align-items-center'>{numbers}</p>
                     <img src={plus} onClick={()=>setNumber(numbers+1)} alt=""/>
                 </button>
             </div>

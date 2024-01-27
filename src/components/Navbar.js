@@ -60,7 +60,7 @@ function Navbar() {
                         <img className='log' style={{ visibility: isMenuOpen ? "visible" : "hidden" }} src={logo} alt="Logo" />
                     </span>
 
-                    <NavLink style={style2} to="/">Collection</NavLink>
+                    <NavLink style={style2} to="/ecommerce-product-paged">Collection</NavLink>
                     <NavLink style={style2} to="/Men">Men</NavLink>
                     <NavLink style={style2} to="/Women">Women</NavLink>
                     <NavLink style={style2} to="/About">About</NavLink>
