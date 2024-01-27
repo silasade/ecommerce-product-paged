@@ -22,14 +22,14 @@ function App() {
       <Navbar/>
     
     <Routes>
-        <Route path="/" element={
+        <Route path="/ecommerce-product-page" element={
             <React.Suspense fallback={<Spinner/>}>
                 <Lazyabout/>
             </React.Suspense>}/>
-        <Route path="Men" element={<Men/>}/>
-        <Route path="Women" element={<Women/>}/>
-        <Route path="About" element={<About/>}/>
-        <Route path="Contact" element={<Contact/>}/>
+        <Route path="/Men" element={<Men/>}/>
+        <Route path="/Women" element={<Women/>}/>
+        <Route path="/About" element={<About/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
         <Route path="*" element={<Nomatch/>}/>
 
     </Routes>
